@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nairn Falls — A Field Guide to the Roadside Waterfall &amp; Campground, Pemberton BC</title>
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="A field guide to Nairn Falls Provincial Park near Pemberton, BC — the ten-minute pull-over on Highway 99 that everyone drives past on the way to Joffre. The falls trail, the campground, One Mile Lake, and when to go.">
+<link rel="canonical" href="https://nairnfalls.com/">
+<meta property="og:title" content="Nairn Falls — A Field Guide to the Roadside Waterfall &amp; Campground, Pemberton BC">
+<meta property="og:description" content="The Green River punches through a granite gorge a few minutes south of Pemberton. An honest field guide to the falls trail, the campground, and the swim lake next door.">
+<meta property="og:url" content="https://nairnfalls.com/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f4f3ec;
+    --paper-dim: #ecebe2;
+    --paper-cool: #eef1ec;
+    --ink: #1c1f1c;
+    --ink-soft: #33372f;
+    --ink-mute: #757a6f;
+    --rule: #dcdacd;
+    --rule-strong: #c6c4b4;
+    --river: #2e5f54;
+    --river-deep: #234a42;
+    --granite: #5d6266;
+    --granite-lt: #9aa0a2;
+    --foam: #f6f9f7;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--paper); color: var(--ink);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+    font-size: 17px; line-height: 1.68;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { background: var(--river); color: var(--foam); }
+
+  a { color: inherit; text-decoration: none; }
+  .u { border-bottom: 1px solid var(--rule-strong); transition: border-color .2s, color .2s; }
+  .u:hover { border-bottom-color: var(--river); color: var(--river-deep); }
+
+  h1, h2, h3 {
+    font-family: "Fraunces", "Georgia", serif;
+    font-weight: 400; line-height: 1.06;
+    letter-spacing: -0.02em; margin: 0;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    color: var(--ink);
+  }
+  h1 { font-size: clamp(2.8rem, 7vw, 5rem); font-weight: 340; }
+  h2 { font-size: clamp(1.6rem, 3vw, 2.25rem); }
+  h3 { font-size: 1.22rem; font-weight: 450; line-height: 1.3; }
+  p { margin: 0 0 1.05rem; color: var(--ink-soft); font-size: 1.03rem; }
+
+  .shell { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
+  .column { max-width: 700px; margin: 0 auto; padding: 0 1.5rem; }
+
+  .eyebrow {
+    display: flex; align-items: center; gap: 1rem;
+    font-size: 0.7rem; letter-spacing: 0.26em; text-transform: uppercase;
+    font-weight: 600; color: var(--river);
+    margin-bottom: 1.1rem;
+  }
+  .eyebrow::after { content: ""; flex: 1; height: 1px; background: var(--rule); }
+  .eyebrow.center { justify-content: center; }
+  .eyebrow.center::before { content: ""; flex: 1; height: 1px; background: var(--rule); }
+
+  /* ---------- NAV ---------- */
+  header.masthead {
+    position: sticky; top: 0; z-index: 60;
+    background: rgba(244,243,236,0.88);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--rule);
+  }
+  header.masthead .inner {
+    max-width: 1120px; margin: 0 auto;
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 1.5rem; padding: 0.95rem 1.5rem;
+  }
+  .wordmark { font-family: "Fraunces", serif; font-size: 1.12rem; font-weight: 450; letter-spacing: -0.01em; white-space: nowrap; }
+  .wordmark em { font-style: italic; color: var(--river); }
+  .wordmark small {
+    display: block; font-family: "Inter", sans-serif; font-size: 0.58rem;
+    letter-spacing: 0.24em; text-transform: uppercase; font-weight: 600;
+    color: var(--ink-mute); margin-top: 0.1rem;
+  }
+  header.masthead nav { display: flex; gap: 1.4rem; overflow-x: auto; scrollbar-width: none; }
+  header.masthead nav::-webkit-scrollbar { display: none; }
+  header.masthead nav a {
+    font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase;
+    font-weight: 600; color: var(--ink-mute); white-space: nowrap; padding: 0.2rem 0;
+  }
+  header.masthead nav a:hover { color: var(--river-deep); }
+  @media (max-width: 720px) { header.masthead nav { display: none; } }
+
+  /* ---------- HERO ---------- */
+  .hero { border-bottom: 1px solid var(--rule); background: var(--paper-cool); }
+  .hero svg.gorge { display: block; width: 100%; height: auto; }
+
+  .titleplate { text-align: center; padding: 3.6rem 1.5rem 3rem; }
+  .vol-line {
+    font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase;
+    font-weight: 600; color: var(--ink-mute); margin-bottom: 1.4rem;
+  }
+  .vol-line a { color: var(--river); }
+  .vol-line a:hover { color: var(--river-deep); }
+  .titleplate h1 span.thin { font-style: italic; font-weight: 300; color: var(--granite); }
+  .deck {
+    font-family: "Fraunces", serif; font-style: italic; font-weight: 340;
+    font-size: clamp(1.15rem, 2.2vw, 1.45rem); line-height: 1.5;
+    color: var(--ink-soft); max-width: 34em; margin: 1.4rem auto 0;
+  }
+
+  /* ---------- COORDINATE STRIP ---------- */
+  .coords {
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
+    background: var(--paper);
+  }
+  .coords .inner {
+    max-width: 1120px; margin: 0 auto; padding: 0 1.5rem;
+    display: grid; grid-template-columns: repeat(5, 1fr);
+  }
+  .coords .cell { padding: 1.1rem 1rem; border-left: 1px solid var(--rule); text-align: center; }
+  .coords .cell:first-child { border-left: none; }
+  .coords .k { font-size: 0.62rem; letter-spacing: 0.24em; text-transform: uppercase; font-weight: 600; color: var(--ink-mute); display: block; margin-bottom: 0.25rem; }
+  .coords .v { font-family: "Fraunces", serif; font-size: 1.05rem; font-weight: 450; color: var(--ink); }
+  .coords .v small { font-size: 0.75rem; color: var(--ink-mute); font-family: "Inter", sans-serif; }
+  @media (max-width: 760px) {
+    .coords .inner { grid-template-columns: repeat(2, 1fr); }
+    .coords .cell { border-top: 1px solid var(--rule); }
+    .coords .cell:nth-child(-n+2) { border-top: none; }
+    .coords .cell:nth-child(odd) { border-left: none; }
+  }
+
+  /* ---------- ESSAY ---------- */
+  section.essay { padding: 6rem 0 4.5rem; }
+  .essay .lede::first-letter {
+    font-family: "Fraunces", serif; font-weight: 400;
+    float: left; font-size: 4.6rem; line-height: 0.82;
+    padding: 0.08em 0.12em 0 0; color: var(--river);
+  }
+  .essay p { font-size: 1.07rem; line-height: 1.78; }
+
+  .pullquote {
+    margin: 3.4rem auto; padding: 2.2rem 0;
+    border-top: 1px solid var(--rule-strong); border-bottom: 1px solid var(--rule-strong);
+    text-align: center;
+  }
+  .pullquote p {
+    font-family: "Fraunces", serif; font-style: italic; font-weight: 340;
+    font-size: clamp(1.35rem, 2.6vw, 1.8rem); line-height: 1.45;
+    color: var(--ink); margin: 0; max-width: 26em; margin-inline: auto;
+  }
+  .pullquote cite { display: block; margin-top: 0.9rem; font-family: "Inter", sans-serif; font-style: normal; font-size: 0.68rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--ink-mute); font-weight: 600; }
+
+  /* ---------- TRAIL LOG (numbered waypoints) ---------- */
+  section.traillog { padding: 5.5rem 0 6rem; background: var(--paper-dim); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  .log-head { max-width: 700px; margin: 0 auto 3rem; padding: 0 1.5rem; }
+  .log-head h2 { margin-bottom: 0.8rem; }
+  .log-head p.intro { font-family: "Fraunces", serif; font-style: italic; font-size: 1.12rem; color: var(--ink-soft); }
+  .waypoints { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; position: relative; }
+  .waypoint {
+    display: grid; grid-template-columns: 64px 1fr; gap: 1.6rem;
+    padding: 0 0 2.6rem; position: relative;
+  }
+  .waypoint::before {
+    content: ""; position: absolute; left: 31px; top: 58px; bottom: 6px;
+    width: 1px; background: var(--rule-strong);
+  }
+  .waypoint:last-child::before { display: none; }
+  .waypoint:last-child { padding-bottom: 0; }
+  .wp-num {
+    width: 62px; height: 62px; border-radius: 50%;
+    border: 1.5px solid var(--river); background: var(--paper);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    font-family: "Fraunces", serif; font-size: 1.35rem; font-weight: 450; color: var(--river-deep);
+    flex-shrink: 0; position: relative; z-index: 1;
+  }
+  .wp-num small { font-family: "Inter", sans-serif; font-size: 0.5rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-mute); font-weight: 600; margin-top: -0.1rem; }
+  .wp-body h3 { margin-bottom: 0.35rem; }
+  .wp-body .km { font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600; color: var(--ink-mute); display: block; margin-bottom: 0.55rem; }
+  .wp-body p { margin: 0; font-size: 0.99rem; }
+  @media (max-width: 560px) {
+    .waypoint { grid-template-columns: 48px 1fr; gap: 1.1rem; }
+    .wp-num { width: 46px; height: 46px; font-size: 1.05rem; }
+    .wp-num small { display: none; }
+    .waypoint::before { left: 23px; top: 46px; }
+  }
+
+  .plain-warning {
+    max-width: 760px; margin: 3rem auto 0; padding: 1.4rem 1.6rem;
+    margin-inline: auto;
+    background: var(--paper); border: 1px solid var(--rule-strong);
+    border-left: 3px solid var(--river-deep);
+  }
+  .plain-warning strong { display: block; font-size: 0.66rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--river-deep); font-weight: 600; margin-bottom: 0.45rem; }
+  .plain-warning p { margin: 0; font-size: 0.98rem; color: var(--ink); }
+  @media (max-width: 800px) { .plain-warning { margin-left: 1.5rem; margin-right: 1.5rem; } }
+
+  /* ---------- SPLIT SECTIONS (campground / One Mile Lake) ---------- */
+  section.pair { padding: 6rem 0; }
+  .pair-grid { display: grid; grid-template-columns: 5fr 4fr; gap: 4rem; align-items: start; max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
+  .pair-grid.flip { grid-template-columns: 4fr 5fr; }
+  @media (max-width: 860px) { .pair-grid, .pair-grid.flip { grid-template-columns: 1fr; gap: 2.2rem; } }
+  .pair-grid h2 { margin-bottom: 1rem; }
+  .fact-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--rule-strong); }
+  .fact-list li {
+    display: grid; grid-template-columns: 110px 1fr; gap: 1rem;
+    padding: 0.75rem 0; border-bottom: 1px solid var(--rule);
+    font-size: 0.93rem;
+  }
+  .fact-list .fk { color: var(--ink-mute); font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; font-weight: 600; padding-top: 0.15rem; }
+  .fact-list .fv { color: var(--ink); }
+  .fact-list .fv em { font-family: "Fraunces", serif; }
+
+  section.pair.tinted { background: var(--paper-cool); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+
+  /* ---------- OVERHEAD interlude ---------- */
+  section.overhead { padding: 4.5rem 0; text-align: center; }
+  section.overhead .column p { font-family: "Fraunces", serif; font-size: 1.15rem; font-style: italic; line-height: 1.65; color: var(--ink-soft); }
+
+  /* ---------- SEASONS ---------- */
+  section.seasons { padding: 5.5rem 0 6rem; }
+  .season-rows { max-width: 820px; margin: 2.2rem auto 0; padding: 0 1.5rem; }
+  .season-row {
+    display: grid; grid-template-columns: 170px 1fr auto; gap: 1.5rem;
+    align-items: baseline; padding: 1.2rem 0; border-top: 1px solid var(--rule);
+  }
+  .season-row:last-child { border-bottom: 1px solid var(--rule); }
+  .season-row .sn { font-family: "Fraunces", serif; font-style: italic; font-size: 1.15rem; color: var(--ink); }
+  .season-row .sd { font-size: 0.96rem; color: var(--ink-soft); }
+  .season-row .verdict {
+    font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600;
+    padding: 0.3rem 0.75rem; border: 1px solid var(--rule-strong); border-radius: 999px;
+    color: var(--ink-mute); white-space: nowrap;
+  }
+  .season-row .verdict.go { border-color: var(--river); color: var(--river-deep); }
+  @media (max-width: 640px) {
+    .season-row { grid-template-columns: 1fr; gap: 0.4rem; }
+    .season-row .verdict { justify-self: start; }
+  }
+
+  /* ---------- HONEST NOTE ---------- */
+  section.honest { padding: 5.5rem 0; background: var(--paper-dim); border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); }
+  section.honest .column p { font-size: 1.05rem; line-height: 1.75; }
+  section.honest em { color: var(--ink); }
+
+  /* ---------- TRAILHEAD SUPPORT ---------- */
+  section.support { padding: 5.5rem 0; }
+  .support-card {
+    max-width: 820px; margin: 0 auto; padding: 2.4rem 2.6rem;
+    border: 1px solid var(--rule-strong); background: var(--foam);
+  }
+  @media (max-width: 860px) { .support-card { margin: 0 1.5rem; padding: 1.8rem 1.5rem; } }
+  .support-card h2 { margin-bottom: 0.9rem; font-size: clamp(1.4rem, 2.4vw, 1.8rem); }
+  .support-card p { font-size: 0.99rem; }
+  .support-card .cta {
+    display: inline-block; margin-top: 0.6rem;
+    padding: 0.68rem 1.5rem; background: var(--river-deep); color: var(--foam);
+    font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; font-weight: 600;
+    transition: background .2s;
+  }
+  .support-card .cta:hover { background: var(--river); }
+
+  /* ---------- FAQ ---------- */
+  section.faq { padding: 5.5rem 0 6rem; }
+  .faq-list { margin-top: 2.4rem; border-top: 1px solid var(--rule-strong); }
+  details.qa { border-bottom: 1px solid var(--rule); }
+  details.qa > summary {
+    list-style: none; cursor: pointer; outline: none;
+    padding: 1.35rem 0; display: flex; gap: 1.1rem; align-items: baseline;
+    font-family: "Fraunces", serif; font-weight: 450; font-size: 1.18rem;
+    line-height: 1.35; letter-spacing: -0.01em; color: var(--ink);
+  }
+  details.qa > summary::-webkit-details-marker { display: none; }
+  details.qa > summary:hover { color: var(--river-deep); }
+  .qa .tick {
+    font-family: "Inter", sans-serif; font-weight: 300; font-size: 1.4rem;
+    color: var(--river); line-height: 1; margin-left: auto; flex-shrink: 0;
+    transition: transform .2s;
+  }
+  details.qa[open] .tick { transform: rotate(45deg); }
+  .qa .ans { padding: 0 0 1.5rem; }
+  .qa .ans p { font-size: 0.99rem; margin-bottom: 0.85rem; }
+  .qa .ans p:last-child { margin-bottom: 0; }
+
+  /* ---------- FOOTER ---------- */
+  footer.colophon { background: var(--ink); color: #c9cdc2; padding: 3.5rem 0 2.2rem; }
+  footer.colophon a { color: #e8eae1; }
+  footer.colophon a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+  .foot-grid { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 2.5rem; }
+  @media (max-width: 720px) { .foot-grid { grid-template-columns: 1fr; } }
+  .foot-grid h4 { font-family: "Inter", sans-serif; font-size: 0.64rem; letter-spacing: 0.26em; text-transform: uppercase; color: #8c9186; font-weight: 600; margin: 0 0 0.9rem; }
+  .foot-grid p { color: #b4b8ab; font-size: 0.9rem; margin: 0 0 0.8rem; }
+  .foot-grid ul { list-style: none; margin: 0; padding: 0; }
+  .foot-grid ul li { margin-bottom: 0.45rem; font-size: 0.9rem; }
+  .foot-bottom {
+    max-width: 1120px; margin: 2.8rem auto 0; padding: 1.3rem 1.5rem 0;
+    border-top: 1px solid #3a3e38;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.8rem;
+    font-size: 0.74rem; color: #8c9186;
+  }
+  .foot-bottom em { font-family: "Fraunces", serif; }
+</style>
+</head>
+<body>
+
+<!-- ===================== MASTHEAD ===================== -->
+<header class="masthead">
+  <div class="inner">
+    <a class="wordmark" href="#top">Nairn <em>Falls</em><small>A Sea to Sky Trails field guide</small></a>
+    <nav>
+      <a href="#pullover">The Pull-Over</a>
+      <a href="#traillog">Trail Log</a>
+      <a href="#campground">Campground</a>
+      <a href="#onemile">One Mile Lake</a>
+      <a href="#seasons">Seasons</a>
+      <a href="#faq">Questions</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<div class="hero" id="top">
+  <svg class="gorge" viewBox="0 0 1200 540" role="img" aria-label="Illustration of the Green River funneling through the narrow granite gorge at Nairn Falls, with Mount Currie behind" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#dfe7e2"/>
+        <stop offset="0.6" stop-color="#eef0e6"/>
+        <stop offset="1" stop-color="#f2f1e7"/>
+      </linearGradient>
+      <linearGradient id="pool" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#4b7d6f"/>
+        <stop offset="1" stop-color="#2e5f54"/>
+      </linearGradient>
+    </defs>
+
+    <!-- sky -->
+    <rect x="0" y="0" width="1200" height="540" fill="url(#sky)"/>
+
+    <!-- Mount Currie massif, distant -->
+    <path d="M0 178 L120 150 L230 96 L310 128 L420 62 L505 110 L560 92 L640 130 L760 74 L860 122 L980 88 L1090 140 L1200 118 L1200 260 L0 260 Z" fill="#a9b1ad"/>
+    <path d="M420 62 L455 84 L442 96 L462 108 L438 104 L428 122 L414 100 L396 108 L408 88 L398 82 Z" fill="#f3f5f1"/>
+    <path d="M760 74 L790 96 L778 104 L794 118 L772 112 L760 128 L748 106 L732 112 L744 92 Z" fill="#f3f5f1"/>
+    <path d="M960 92 L985 112 L968 118 L978 130 L956 124 L948 108 Z" fill="#eef1ec"/>
+
+    <!-- mid forest ridge -->
+    <path d="M0 236 L60 222 L140 232 L230 214 L340 230 L460 210 L560 228 L680 212 L800 230 L920 214 L1040 232 L1140 220 L1200 230 L1200 320 L0 320 Z" fill="#4c6a58"/>
+    <path d="M0 258 L90 246 L200 258 L330 244 L470 260 L610 246 L760 260 L900 246 L1050 260 L1200 250 L1200 330 L0 330 Z" fill="#3c584a"/>
+
+    <!-- gorge rim conifers -->
+    <g fill="#2c463c">
+      <path d="M120 268 l14 -32 l14 32 Z"/><path d="M150 274 l12 -26 l12 26 Z"/><path d="M90 276 l11 -24 l11 24 Z"/>
+      <path d="M1050 268 l14 -32 l14 32 Z"/><path d="M1090 276 l12 -26 l12 26 Z"/><path d="M1020 278 l11 -22 l11 22 Z"/>
+      <path d="M240 280 l10 -22 l10 22 Z"/><path d="M960 282 l10 -22 l10 22 Z"/>
+    </g>
+
+    <!-- left gorge wall, layered granite converging to the notch -->
+    <path d="M0 540 L0 268 L180 282 L330 300 L455 322 L540 352 L560 540 Z" fill="#6d7276"/>
+    <path d="M0 540 L0 330 L160 340 L310 360 L440 386 L525 420 L545 540 Z" fill="#5d6266"/>
+    <path d="M0 540 L0 420 L150 428 L300 448 L430 474 L510 505 L520 540 Z" fill="#4d5256"/>
+    <g stroke="#83888c" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.7">
+      <path d="M40 300 L300 330 M80 356 L360 392 M60 448 L330 480"/>
+      <path d="M380 340 L470 370 M420 400 L500 435 M460 300 L530 330"/>
+    </g>
+
+    <!-- right gorge wall -->
+    <path d="M1200 540 L1200 268 L1010 282 L860 302 L740 326 L655 356 L640 540 Z" fill="#767b7f"/>
+    <path d="M1200 540 L1200 330 L1030 342 L880 364 L760 390 L672 424 L655 540 Z" fill="#63686c"/>
+    <path d="M1200 540 L1200 424 L1040 432 L900 452 L775 478 L690 508 L680 540 Z" fill="#525760"/>
+    <g stroke="#8b9094" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.7">
+      <path d="M1160 302 L900 334 M1120 360 L840 396 M1140 452 L880 484"/>
+      <path d="M820 344 L730 374 M780 404 L705 438 M745 306 L672 336"/>
+    </g>
+
+    <!-- river entering the notch above -->
+    <path d="M560 262 C575 258 625 258 640 262 L648 292 L552 292 Z" fill="#5f9486"/>
+
+    <!-- upper tier of the falls -->
+    <path d="M556 290 L648 290 L642 356 L562 356 Z" fill="#e9f2ee"/>
+    <g stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.9">
+      <path d="M572 296 L568 350"/><path d="M590 294 L588 352"/><path d="M608 294 L610 352"/><path d="M628 296 L634 350"/>
+    </g>
+    <g stroke="#bcd8cf" stroke-width="2" stroke-linecap="round" opacity="0.8">
+      <path d="M580 300 L577 348"/><path d="M600 298 L600 350"/><path d="M620 298 L624 348"/>
+    </g>
+
+    <!-- mid ledge / churn pool -->
+    <path d="M548 356 C575 372 630 372 650 356 L662 386 L538 386 Z" fill="#cfe4dc"/>
+    <ellipse cx="600" cy="362" rx="58" ry="10" fill="#ffffff" opacity="0.75"/>
+
+    <!-- lower tier, wider -->
+    <path d="M540 384 L662 384 L678 470 L524 470 Z" fill="#eaf3ef"/>
+    <g stroke="#ffffff" stroke-width="3.4" stroke-linecap="round" opacity="0.92">
+      <path d="M556 392 L546 462"/><path d="M580 390 L575 464"/><path d="M602 390 L602 464"/><path d="M624 390 L630 464"/><path d="M646 392 L656 462"/>
+    </g>
+    <g stroke="#b7d4ca" stroke-width="2" stroke-linecap="round" opacity="0.8">
+      <path d="M568 396 L560 460"/><path d="M591 394 L588 462"/><path d="M613 394 L616 462"/><path d="M636 396 L644 460"/>
+    </g>
+
+    <!-- mist -->
+    <ellipse cx="600" cy="470" rx="120" ry="26" fill="#ffffff" opacity="0.5"/>
+    <ellipse cx="560" cy="452" rx="60" ry="16" fill="#ffffff" opacity="0.35"/>
+    <ellipse cx="650" cy="455" rx="55" ry="14" fill="#ffffff" opacity="0.35"/>
+
+    <!-- plunge pool and river running out toward the viewer -->
+    <path d="M470 540 L510 486 C560 462 645 462 692 486 L735 540 Z" fill="url(#pool)"/>
+    <g stroke="#a8cec2" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.85">
+      <path d="M520 500 q20 -7 42 0 t42 0 t42 0"/>
+      <path d="M505 520 q24 -8 48 0 t48 0 t48 0"/>
+      <path d="M600 480 q18 -6 36 0" opacity="0.6"/>
+    </g>
+    <g stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7">
+      <path d="M545 490 q16 -6 32 0"/><path d="M615 508 q18 -6 36 0"/>
+    </g>
+
+    <!-- foreground rock shoulders framing the pool -->
+    <path d="M0 540 L440 540 L500 502 L430 486 L300 496 L140 512 L0 508 Z" fill="#3f444c"/>
+    <path d="M1200 540 L760 540 L706 500 L780 484 L920 494 L1080 510 L1200 506 Z" fill="#434850"/>
+    <g stroke="#5f6467" stroke-width="1.6" fill="none" stroke-linecap="round" opacity="0.8">
+      <path d="M150 520 L360 506 M80 530 L280 522"/>
+      <path d="M840 518 L1060 506 M920 530 L1120 522"/>
+    </g>
+
+    <!-- a peregrine, small, riding the gorge wind -->
+    <g stroke="#33372f" stroke-width="2.4" fill="none" stroke-linecap="round">
+      <path d="M868 148 q9 -10 19 -3 q10 -8 20 1"/>
+      <path d="M930 178 q7 -8 15 -2 q8 -6 16 1" opacity="0.7" stroke-width="2"/>
+    </g>
+  </svg>
+
+  <div class="titleplate">
+    <div class="vol-line"><a href="https://seatoskytrails.com/">Sea to Sky Trails</a> &nbsp;&middot;&nbsp; Vol.&nbsp;II, No.&nbsp;11</div>
+    <h1>Nairn Falls<br><span class="thin">the pull-over that&rsquo;s worth it</span></h1>
+    <p class="deck">Every summer morning a river of cars runs Highway 99 toward Joffre Lakes, and almost all of them drive straight past the best twenty minutes on the road. This is the argument for stopping.</p>
+  </div>
+</div>
+
+<!-- ===================== COORDINATE STRIP ===================== -->
+<div class="coords" aria-label="Trail data">
+  <div class="inner">
+    <div class="cell"><span class="k">Position</span><span class="v">50.29&deg;&thinsp;N &middot; 122.81&deg;&thinsp;W <small>approx.</small></span></div>
+    <div class="cell"><span class="k">Falls trail</span><span class="v">~1.5 km <small>one way</small></span></div>
+    <div class="cell"><span class="k">Drop</span><span class="v">~60 m <small>two tiers</small></span></div>
+    <div class="cell"><span class="k">Grade</span><span class="v">Easy&ndash;moderate</span></div>
+    <div class="cell"><span class="k">Off Hwy 99</span><span class="v">Mins from Pemberton</span></div>
+  </div>
+</div>
+
+<!-- ===================== ESSAY ===================== -->
+<section class="essay" id="pullover">
+  <div class="column">
+    <div class="eyebrow">The Case for Stopping</div>
+    <h2 style="margin-bottom:1.6rem;">Everyone is going to Joffre. Nobody is stopping here. Both of these facts are wrong decisions.</h2>
+    <p class="lede">There is a brown BC Parks sign a few minutes south of Pemberton that most drivers register only as evidence they&rsquo;re nearly at the bakery. Behind it, the Green River &mdash; the same glacial water you&rsquo;ve been glancing at through the trees since Whistler &mdash; gets shoved through a slot of granite and detonates. Roughly sixty metres of drop, taken in two furious tiers, in a gorge narrow enough that you can feel the concussion of the water through the soles of your boots before you can see it.</p>
+    <p>What makes Nairn Falls unusual isn&rsquo;t the height. The corridor has taller water. It&rsquo;s the compression &mdash; a full-sized river forced through a gap it plainly does not fit, carving potholes and polished chutes into rock that looks poured rather than broken. And it&rsquo;s the price of admission: a flat-ish 1.5-kilometre walk along a river bench, family-doable, no alpine start, no day-long commitment. Twenty minutes of walking for one of the loudest places in the valley.</p>
+    <p>The trail itself is a quiet pleasure. It runs the bench above the Green the whole way, the river always in earshot on your left, through Douglas-fir and the kind of mossy understorey that photographs better than it has any right to. It&rsquo;s rooty in stretches &mdash; watch toddlers and your own ankles &mdash; but there&rsquo;s nothing technical, and the grade never really asks anything of you until the last little rise to the viewpoints.</p>
+    <p>Then the fence. And past the fence, the chasm &mdash; and this is the part to take seriously, so we&rsquo;ll say it plainly in the trail log below.</p>
+  </div>
+
+  <div class="pullquote">
+    <p>&ldquo;A full-sized river forced through a gap it plainly does not fit. You feel it in your boots before you see it.&rdquo;</p>
+    <cite>Field notes &middot; Green River gorge</cite>
+  </div>
+
+  <div class="column">
+    <p>If Joffre is your day&rsquo;s headline, Nairn is the perfect footnote &mdash; twenty minutes on the drive up to wake your legs, or on the way home when the parking-lot adrenaline has worn off and you want one more good thing before the highway. And if you&rsquo;re camping here as your Joffre basecamp (a genuinely smart move &mdash; more on that below), the falls are simply what you do after dinner.</p>
+  </div>
+</section>
+
+<!-- ===================== TRAIL LOG ===================== -->
+<section class="traillog" id="traillog">
+  <div class="log-head">
+    <div class="eyebrow">Trail Log</div>
+    <h2>Five waypoints, one way.</h2>
+    <p class="intro">Distances are approximate &mdash; this is a walk you feel in minutes, not kilometres.</p>
+  </div>
+
+  <div class="waypoints">
+    <div class="waypoint">
+      <div class="wp-num">01<small>km 0</small></div>
+      <div class="wp-body">
+        <span class="km">Day-use lot &middot; the trailhead</span>
+        <h3>Park, and ignore the highway.</h3>
+        <p>The trail leaves from the day-use area beside the campground. Within a hundred metres the trees swallow the road noise and the river takes over. Outhouses at the lot; carry water.</p>
+      </div>
+    </div>
+
+    <div class="waypoint">
+      <div class="wp-num">02<small>~km 0.5</small></div>
+      <div class="wp-body">
+        <span class="km">The river bench</span>
+        <h3>Walk the shelf above the Green.</h3>
+        <p>The path holds a bench above the river most of the way &mdash; flat, shaded, glacial-green water flickering through the trunks below. This is the stretch that makes the whole stop feel unfairly easy.</p>
+      </div>
+    </div>
+
+    <div class="waypoint">
+      <div class="wp-num">03<small>~km 1</small></div>
+      <div class="wp-body">
+        <span class="km">The rooty middle</span>
+        <h3>Mind the roots, not the grade.</h3>
+        <p>Roots braid the tread here and a couple of short rises show up. Nothing steep, nothing exposed &mdash; just enough texture that small kids should slow down and grandparents will want proper shoes rather than sandals.</p>
+      </div>
+    </div>
+
+    <div class="waypoint">
+      <div class="wp-num">04<small>~km 1.4</small></div>
+      <div class="wp-body">
+        <span class="km">You hear it first</span>
+        <h3>The gorge announces itself.</h3>
+        <p>The river&rsquo;s pleasant murmur becomes a low industrial roar and the air cools and dampens. The last little climb delivers you to the fenced viewpoints at the lip of the chasm.</p>
+      </div>
+    </div>
+
+    <div class="waypoint">
+      <div class="wp-num">05<small>~km 1.5</small></div>
+      <div class="wp-body">
+        <span class="km">The falls</span>
+        <h3>Two tiers, one slot, all the noise.</h3>
+        <p>From the fences you look down into the throat of the gorge: the Green folding over itself in a roughly sixty-metre, two-stage drop, spray climbing back out of the slot. In freshet it is genuinely hard to talk over. Stay behind the fence &mdash; and read the note below before you go.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="plain-warning">
+    <strong>Say it plainly</strong>
+    <p>The rock beyond the fences is water-polished granite &mdash; smooth as countertop, often wet with spray, sloping toward a gorge full of water that does not give people back. The fences are not decorative and the viewpoints are not the boring option; they are the option. Keep children in hand-holding range and keep dogs leashed. People have been badly hurt near waterfalls all over this corridor by rock exactly like this.</p>
+  </div>
+</section>
+
+<!-- ===================== CAMPGROUND ===================== -->
+<section class="pair" id="campground">
+  <div class="pair-grid">
+    <div>
+      <div class="eyebrow">The Campground</div>
+      <h2>The smartest Joffre basecamp on the highway.</h2>
+      <p>Nairn Falls has a vehicle-accessible campground tucked into the trees between the highway and the river &mdash; the kind of unglamorous, well-run BC Parks loop that quietly solves the biggest problem with a Joffre day: the start time. Sleep here and you&rsquo;re at the Joffre lot in a short morning drive while the day-trippers are still fighting their way up from the city.</p>
+      <p>Sites are in forest, so think shade and river-noise rather than big views. Book ahead through the BC Parks <span style="white-space:nowrap;">Discover Camping</span> system &mdash; summer weekends go early, and this is not a park to gamble on rolling into at 7&nbsp;p.m. on a July Friday. Exact fees, dates, and site details change; check the BC Parks page for current information before you commit a trip to it.</p>
+      <p>The falls trail leaves from essentially your doorstep, which is the campground&rsquo;s quiet luxury: the waterfall after dinner, when the day-use lot has emptied and you get the gorge&rsquo;s roar to yourself.</p>
+    </div>
+    <div>
+      <ul class="fact-list">
+        <li><span class="fk">Access</span><span class="fv">Vehicle-accessible sites, right off Highway&nbsp;99</span></li>
+        <li><span class="fk">Setting</span><span class="fv">Forested loop near the Green River &mdash; <em>shade over views</em></span></li>
+        <li><span class="fk">Booking</span><span class="fv">Reservable via BC Parks Discover Camping; summer books out</span></li>
+        <li><span class="fk">Best use</span><span class="fv">Joffre basecamp; Duffey-corridor staging</span></li>
+        <li><span class="fk">Evening move</span><span class="fv">Walk the falls trail after dinner &mdash; you&rsquo;ll likely have it near-empty</span></li>
+        <li><span class="fk">Check first</span><span class="fv">Fees, season dates &amp; site details on the BC Parks page</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ONE MILE LAKE ===================== -->
+<section class="pair tinted" id="onemile">
+  <div class="pair-grid flip">
+    <div>
+      <ul class="fact-list">
+        <li><span class="fk">Where</span><span class="fv">Just up the highway toward Pemberton &mdash; minutes away</span></li>
+        <li><span class="fk">The draw</span><span class="fv">One of the corridor&rsquo;s warmer swim lakes</span></li>
+        <li><span class="fk">The loop</span><span class="fv">Boardwalk-and-trail circuit around the water, <em>flat and easy</em></span></li>
+        <li><span class="fk">The beach</span><span class="fv">Small, friendly, busy on hot afternoons</span></li>
+        <li><span class="fk">Facilities</span><span class="fv">Simple day-use amenities &mdash; check locally for current details</span></li>
+      </ul>
+    </div>
+    <div>
+      <div class="eyebrow">The Pairing</div>
+      <h2>One Mile Lake: the swim to the falls&rsquo; roar.</h2>
+      <p>The Green River at Nairn is glacial, violent, and absolutely not for swimming &mdash; which is fine, because the swim is next door. One Mile Lake sits practically on the edge of Pemberton, a few minutes up the highway, and it&rsquo;s the warm one: a small, friendly lake with a modest beach and a flat boardwalk loop around the shoreline that takes roughly as long as your ice cream lasts.</p>
+      <p>The combination is the whole point. Falls first for the drama, lake after for the cool-down &mdash; or the reverse on a hot day, when you want the swim while the sun&rsquo;s high and the shaded falls trail for the late afternoon. Add a stop in Pemberton for food and you&rsquo;ve built a genuinely good half-day out of things most people drive past at highway speed.</p>
+      <p>Facilities at the lake are simple and we&rsquo;d rather you check current details locally than trust a website&rsquo;s memory of them &mdash; but the water and the boardwalk are the reasons you&rsquo;re there.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OVERHEAD ===================== -->
+<section class="overhead">
+  <div class="column">
+    <div class="eyebrow center">Overhead</div>
+    <p>Two things loom over this little park, and both reward a pause in the parking lot before you leave. Mount Currie fills the northern sky above Pemberton &mdash; an absurd, glacier-hung wall that makes every photo look composited. And peregrine falcons are known to haunt the cliffs in this stretch of the valley; we won&rsquo;t promise you a sighting, but keep an eye on the rock and the ridgelines. Sometimes the fastest animal on earth is watching the same gorge you are.</p>
+  </div>
+</section>
+
+<!-- ===================== SEASONS ===================== -->
+<section class="seasons" id="seasons">
+  <div class="column" style="max-width:820px;">
+    <div class="eyebrow">When to Go</div>
+    <h2>The falls keep a calendar.</h2>
+  </div>
+  <div class="season-rows">
+    <div class="season-row">
+      <div class="sn">May &ndash; June</div>
+      <div class="sd">Freshet. Snowmelt swells the Green and the gorge is at maximum violence &mdash; the most impressive the falls ever look, and the loudest. Expect spray at the viewpoints and a cold, damp microclimate in the chasm.</div>
+      <div class="verdict go">Peak drama</div>
+    </div>
+    <div class="season-row">
+      <div class="sn">July &ndash; August</div>
+      <div class="sd">The full package: falls still strong, campground humming, One Mile Lake at its warmest. Weekends are busy by corridor-north standards, which still means pleasant. Book camping well ahead.</div>
+      <div class="verdict go">Best all-round</div>
+    </div>
+    <div class="season-row">
+      <div class="sn">September &ndash; October</div>
+      <div class="sd">Quiet gold. Cooler river, thinner crowds, colour in the valley and low sun in the gorge. Arguably the best photographs of the year. Check BC Parks for campground season dates.</div>
+      <div class="verdict go">Photographer&rsquo;s pick</div>
+    </div>
+    <div class="season-row">
+      <div class="sn">November &ndash; April</div>
+      <div class="sd">The trail can be icy &mdash; genuinely icy, on a path beside a gorge &mdash; and conditions vary fast at this elevation. Traction devices and sober judgment, or save it for spring. Check current conditions before going.</div>
+      <div class="verdict">Ice-dependent</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== HONEST NOTE ===================== -->
+<section class="honest">
+  <div class="column">
+    <div class="eyebrow">Honest Note</div>
+    <h2 style="margin-bottom:1.4rem;">What the brochures leave out.</h2>
+    <p>Nairn is a short walk to a fenced viewpoint, not a wilderness experience &mdash; if you want solitude and alpine, this isn&rsquo;t that, and pretending otherwise would be silly. On a summer Saturday midday you will share the viewpoints. Go early, go at dinner, or go in the shoulder seasons and the math changes completely.</p>
+    <p>The serious part is the rock. Every year, all over this corridor, people step past fences onto polished granite for a photo. The rock at Nairn is glass-smooth, spray-wet, and angled toward moving water &mdash; <em>there is no version of that step that&rsquo;s worth it.</em> The view from behind the fence is the view.</p>
+    <p>And the falls are the show here &mdash; the trail is lovely but modest, the campground is functional rather than scenic. Come for twenty loud, misty minutes at the lip of a gorge, and you&rsquo;ll leave overpaid. Come expecting Joffre-blue lakes and you&rsquo;ve misread the sign.</p>
+  </div>
+</section>
+
+<!-- ===================== TRAILHEAD SUPPORT ===================== -->
+<section class="support" id="support">
+  <div class="support-card">
+    <div class="eyebrow">Trailhead Support</div>
+    <h2>This one&rsquo;s a walk, not a paddle.</h2>
+    <p>Nairn Falls needs nothing from you but decent shoes &mdash; no boats, no shuttles, no logistics. If your trip runs the whole Sea to Sky and you want gear support elsewhere &mdash; deliveries, rentals, a hand with a bigger day &mdash; the local operator we trust runs it all through one booking page.</p>
+    <p>And if you&rsquo;re building Pemberton into a longer corridor trip: a lot of people pair a falls-and-Joffre day up here with a slow canoe or paddleboard day down in Squamish on either end &mdash; <a class="u" href="https://squamishcanoerental.com/" target="_blank" rel="noopener">Squamish Canoe Rental</a> is the outfit for that (canoes take up to three paddlers).</p>
+    <a class="cta" href="https://rentedlocal.com/Profile?userId=698a2b3bca1e37a683b7bfeb" target="_blank" rel="noopener">Gear &amp; rental support</a>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq" id="faq">
+  <div class="column">
+    <div class="eyebrow">Questions</div>
+    <h2>What people actually ask about Nairn Falls.</h2>
+
+    <div class="faq-list">
+
+      <details class="qa">
+        <summary>How long is the Nairn Falls hike?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>About 1.5 kilometres each way &mdash; roughly 3 km return &mdash; along a bench above the Green River, with only gentle rises. Most groups do the round trip, with proper gawking time at the viewpoints, in about an hour.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Is the trail good for kids?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>Yes, with one honest caveat. The walking is easy-moderate and family-doable, but the tread is rooty in stretches &mdash; it&rsquo;s not a stroller trail, and small kids should be watched on the uneven bits. At the gorge, keep children within arm&rsquo;s reach: the fences exist because the polished rock beyond them is dangerously slick above fast water.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>How tall is Nairn Falls?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>The drop is often quoted at roughly 60 metres in total, taken in two tiers as the Green River squeezes through the granite gorge. Honestly, the number undersells it &mdash; the compression and the noise are what you remember, not the height.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Can you swim at Nairn Falls?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>No &mdash; the Green River here is cold, fast, glacial water pouring through a gorge, and the area around the falls is fenced for good reason. The swim is One Mile Lake, a few minutes up the highway toward Pemberton: warm(ish) water, a small beach, and an easy boardwalk loop. Do both; that&rsquo;s the classic pairing.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Is it worth stopping if I&rsquo;m headed to Joffre Lakes?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>That&rsquo;s the whole thesis of this page. It&rsquo;s a few minutes off your route and about an hour of your day for a waterfall most corridors would build a visitor centre around. Better yet, camp here: Nairn&rsquo;s campground is a popular Joffre basecamp, and sleeping minutes from the trailhead beats a pre-dawn drive from the city.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Do I need a reservation to camp?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>The vehicle-accessible sites are reservable through the BC Parks Discover Camping system, and summer weekends genuinely book out &mdash; reserve ahead rather than gambling on a drive-up. Fees, season dates, and any day-use rules change; check the BC Parks page for current details before you go.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Can I visit in winter?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>Often, but carefully. The trail can be icy in winter &mdash; and an icy path beside a gorge deserves respect. Bring traction devices, check current conditions, and turn around if it&rsquo;s a skating rink. If you want the falls at their most powerful, come back in May or June when the freshet is running.</p>
+        </div>
+      </details>
+
+      <details class="qa">
+        <summary>Are dogs allowed?<span class="tick">+</span></summary>
+        <div class="ans">
+          <p>Dogs are a normal sight on the trail &mdash; on leash, per usual BC Parks rules (check the park page for specifics). The leash matters more here than most places: spray-slick rock and a fatal drop are exactly the combination excited dogs don&rsquo;t assess well.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="colophon">
+  <div class="foot-grid">
+    <div>
+      <h4>This Guide</h4>
+      <p>Nairn Falls is entry No.&nbsp;11 in Volume&nbsp;II of the <a href="https://seatoskytrails.com/">Sea to Sky Trails</a> &mdash; a slow-built field guide to the lakes, rivers, and roadside wonders of the corridor, written by people who keep pulling over.</p>
+      <p>Nairn Falls Provincial Park sits in the territory of the L&#787;il&#787;wat7&uacute;l (L&iacute;l&#787;wat) Nation.</p>
+    </div>
+    <div>
+      <h4>More Field Guides</h4>
+      <ul>
+        <li><a href="https://joffrelake.com/">Joffre Lakes</a></li>
+        <li><a href="https://birkenheadlake.com/">Birkenhead Lake</a></li>
+        <li><a href="https://duffeylake.com/">Duffey Lake</a></li>
+        <li><a href="https://lillooetlake.com/">Lillooet Lake</a></li>
+        <li><a href="https://trainwreckwhistler.com/">Whistler Train Wreck</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Trip Support</h4>
+      <ul>
+        <li><a href="https://rentedlocal.com/Profile?userId=698a2b3bca1e37a683b7bfeb" target="_blank" rel="noopener">Gear &amp; rental delivery</a></li>
+        <li><a href="https://squamishcanoerental.com/" target="_blank" rel="noopener">Squamish Canoe Rental</a></li>
+        <li><a href="https://seatoskytrails.com/">All corridor guides</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div><em>Sea to Sky Trails</em> &middot; Vol.&nbsp;II, No.&nbsp;11 &middot; Published in L&#787;il&#787;wat7&uacute;l territory.</div>
+    <div>Set in Fraunces &amp; Inter. Reader-funded.</div>
+  </div>
+</footer>
+
+<!-- ===================== STRUCTURED DATA ===================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TouristAttraction",
+  "name": "Nairn Falls",
+  "description": "A roughly 60-metre, two-tier waterfall where the Green River punches through a narrow granite gorge in Nairn Falls Provincial Park, a few minutes south of Pemberton, BC. An easy-moderate 1.5 km trail leads to fenced viewpoints; a vehicle-accessible campground makes the park a popular Joffre Lakes basecamp.",
+  "url": "https://nairnfalls.com/",
+  "isAccessibleForFree": true,
+  "touristType": ["Families", "Hikers", "Road trippers", "Campers"],
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 50.29,
+    "longitude": -122.81
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pemberton",
+    "addressRegion": "BC",
+    "addressCountry": "CA"
+  },
+  "containedInPlace": {
+    "@type": "Place",
+    "name": "Nairn Falls Provincial Park"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long is the Nairn Falls hike?",
+      "acceptedAnswer": { "@type": "Answer", "text": "About 1.5 kilometres each way — roughly 3 km return — along a bench above the Green River, with only gentle rises. Most groups do the round trip, with time at the viewpoints, in about an hour." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the Nairn Falls trail good for kids?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, with a caveat. The walking is easy-moderate and family-doable, but the tread is rooty in stretches and it is not a stroller trail. At the gorge, keep children within arm's reach — the fences exist because the polished rock beyond them is dangerously slick above fast water." }
+    },
+    {
+      "@type": "Question",
+      "name": "How tall is Nairn Falls?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The drop is often quoted at roughly 60 metres in total, taken in two tiers as the Green River squeezes through a narrow granite gorge. The compression and the noise are what people remember more than the height." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you swim at Nairn Falls?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No — the Green River here is cold, fast glacial water in a gorge, and the falls area is fenced for good reason. The swim stop is One Mile Lake, a few minutes up the highway toward Pemberton, with warmer water, a small beach, and an easy boardwalk loop." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Nairn Falls worth stopping at on the way to Joffre Lakes?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. It is a few minutes off Highway 99 and about an hour of your day for a dramatic two-tier waterfall. Many people also camp at Nairn Falls as a Joffre basecamp — the campground is minutes from the Joffre drive and reservable through BC Parks Discover Camping." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need a reservation to camp at Nairn Falls?",
+      "acceptedAnswer": { "@type": "Answer", "text": "The vehicle-accessible campsites are reservable through the BC Parks Discover Camping system, and summer weekends commonly book out — reserve ahead. Fees, season dates, and day-use rules change, so check the BC Parks page for current details." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I visit Nairn Falls in winter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Often, but carefully — the trail can be icy in winter, and an icy path beside a gorge deserves respect. Bring traction devices and check current conditions. The falls are at their most powerful in May and June during freshet." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are dogs allowed at Nairn Falls?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Dogs are a common sight on the trail, on leash per usual BC Parks rules — check the park page for specifics. Leashes matter especially here: spray-slick rock above a gorge is exactly the hazard excited dogs don't assess well." }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Nairn Falls mark: granite gorge walls converging on a two-tier falls -->
+  <rect width="64" height="64" rx="12" fill="#f4f3ec"/>
+  <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- left wall -->
+    <path d="M8 14 L22 20 L27 30 L26 52" stroke="#5d6266" stroke-width="3"/>
+    <path d="M12 26 L21 31" stroke="#5d6266" stroke-width="1.6" opacity="0.6"/>
+    <path d="M13 40 L22 44" stroke="#5d6266" stroke-width="1.6" opacity="0.6"/>
+    <!-- right wall -->
+    <path d="M56 14 L42 20 L37 30 L38 52" stroke="#5d6266" stroke-width="3"/>
+    <path d="M52 26 L43 31" stroke="#5d6266" stroke-width="1.6" opacity="0.6"/>
+    <path d="M51 40 L42 44" stroke="#5d6266" stroke-width="1.6" opacity="0.6"/>
+    <!-- two-tier falls -->
+    <path d="M32 12 L32 26" stroke="#2e5f54" stroke-width="4"/>
+    <path d="M32 30 L32 46" stroke="#2e5f54" stroke-width="4"/>
+    <path d="M29 27.5 Q32 30 35 27.5" stroke="#2e5f54" stroke-width="2"/>
+    <!-- plunge pool -->
+    <path d="M22 52 Q27 48.5 32 52 Q37 55.5 42 52" stroke="#2e5f54" stroke-width="2.4"/>
+  </g>
+</svg>
